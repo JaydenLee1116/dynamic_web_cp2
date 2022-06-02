@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayden's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Jayden"
+    />
+    <meta name="author" content="Jayden" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/5a97a57cc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer> </script>
+  </head>
+  <body>
+  
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <img src="./imgs/favicon.png" alt="jayden's logo" class="fab">
+        <!-- <i class="fab fa-diaspora"></i> -->
+        <a href="#">Jayden</a>
+      </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <li class="navbar__menu__item" data-link="#testinomials">Testinomial</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img src="imgs/profile.png" alt="Jadyden's profile photo" class="home__avatar">
+        <h1 class="home__title">Hello, <br/> I'm Jayden</h1>
+        <h2 class="home__description">인생은 한번뿐인 여행이라 믿는 프론트엔드 엔지니어</h2>
+        <button class="home__contact"s>CONTACT ME</button>
+      </div>
+    </section>
+
+    
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        코드스테이츠에서 부트캠프를 수강하고 데이터 분석과 관련한 프로젝트를 진행하였습니다. 프로젝트를 진행 중, 웹 개발에 흥미를 느껴 웹을 공부하고 있습니다.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript, <br />React, Web APIs
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">
+            JavaScript, NodeJS, Python
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <div class="major__description">
+            React Native, Flutter, iOS
+          </div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="imgs/jobs/logo-html-css-js.png" alt="wecode" class="job__logo">
+          <div class="job__description">
+            <p class="job__name">Hope Front Engineer</p>
+            <p class="job__period">2022 July ~ </p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="imgs/jobs/logo-codestates.png" alt="codestates" class="job__logo">
+          <div class="job__description">
+            <p class="job__name">Codestates Data Analyst</p>
+            <p class="job__period">2021 November ~ 2022 June</p>
+          </div>
+        </div>
+        <div class="job"></div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>JavaScript에 대한 관심이 많고 그만큼 자바스크립트를 능숙하게 다룰 수 있습니다. 또한 React를 이용한 프론트엔드 구축, NodeJS를 통한
+          전반적인 웹 구축 경험이 있습니다. 개발 외적으론 계획 및 시간 관리를 능숙하게 해내는 능력이 있습니다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar" >
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+            <div class="skill__description">
+              <span>JAVASCRIPT</span>
+              <span>99%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 99%;"></div>
+            </div>
+            </div>
+          </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Google Colab</span></li>
+              <li><span></span>Pycharm</li>
+              <li><span></span>Powerpoint</li>
+              <li><span></span>Excel</li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Scrum master</span></li>
+              <li><span>Math</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>Mywork</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">All <span class="category__count">5</span></button>
+          <button class="category__btn" data-filter="front-end">Front-end <span class="category__count">3</span></button>
+          <button class="category__btn" data-filter="back-end">Back-end <span class="category__count">1</span></button>
+          <button class="category__btn" data-filter="mobile">Mobile <span class="category__count">1</span></button>
+        </div>
+        <div class="work__projects">
+          <a href="https://github.com/JaydenLee1116/Project1_Next-Quarter-Game-Design-Prediction" 
+          class="project"
+          target="blank"
+          data-type="front-end">
+            <img class="project__img" src="imgs/projects/project1.png" alt="front1">
+            <div class="project__description">
+              <h3>Front1</h3>
+              <span>Practice1</span>
+            </div>
+          </a>
+          <a href="https://github.com/JaydenLee1116/Project2_Kaggle_Credit_Card_Approval_Prediction" 
+          class="project"
+          target="blank"
+          data-type="front-end">
+            <img class="project__img" src="imgs/projects/project2.png" alt="front2">
+            <div class="project__description">
+              <h3>Front2</h3>
+              <span>Practice2</span>
+            </div>
+          </a>
+          <a href="https://github.com/JaydenLee1116/Project3_Seoul_Property_Prediction_web_application_service" 
+          class="project"
+          target="blank"
+          data-type="front-end">
+            <img class="project__img" src="imgs/projects/project3.png" alt="front3">
+            <div class="project__description">
+              <h3>Front3</h3>
+              <span>Practice3</span>
+            </div>
+          </a>
+          <a href="https://github.com/JaydenLee1116/Project4_Multi_Classification_Emotion_Prediction" 
+          class="project"
+          target="blank"
+          data-type="back-end">
+            <img class="project__img" src="imgs/projects/project4.png" alt="Back4">
+            <div class="project__description">
+              <h3>Back4</h3>
+              <span>Practice4</span>
+            </div>
+          </a>
+          <a href="https://github.com/JaydenLee1116" 
+          class="project"
+          target="blank"
+          data-type="mobile">
+            <img class="project__img" src="imgs/projects/project5.png" alt="mobile5">
+            <div class="project__description">
+              <h3>Mobile5</h3>
+              <span>Practice5</span>
+            </div>
+          </a>
+        </div>
+        </div>
+    </section>
+    <!-- Testinmials -->
+    <section id="testinomials" class="section">
+      <div class="section__container">
+        <h1>Testinomials</h1>
+      <h3>See what they say about me</h3>
+      <div class="testinomials">
+        <div class="testinomial">
+          <img src="./imgs/testinomial/people1.png" alt="people1" class="testinomial__avatar">
+          <div class="testinomial__speech-bubble">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem nobis magni ullam? Eius voluptates labore saepe, quos, nemo odit earum tenetur provident numquam corrupti autem aspernatur obcaecati quasi minus?</p>
+            <p class="name"><a href="">Hori</a> / KaKao</p>
+          </div>
+        </div>
+        <div class="testinomial">
+          <div class="testinomial__speech-bubble">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem nobis magni ullam? Eius voluptates labore saepe, quos, nemo odit earum tenetur provident numquam corrupti autem aspernatur obcaecati quasi minus?</p>
+            <p class="name"><a href="">Hodu</a> / Toss</p>
+          </div>
+          <img src="./imgs/testinomial/people2.png" alt="people2" class="testinomial__avatar">
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">vv55adss@gmail.com</h2>
+      <div class="contact_links">
+        <a href="https://github.com/JaydenLee1116" target="blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://jayden1116.tistory.com/" target="blank">
+          <i class="fa-solid fa-t"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2022 Jayden's LifeTrip - All rights reserved</p>
+    </section>
+
+    <!-- Home Arrow Up -->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+  </body>
+</html>
