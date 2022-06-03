@@ -1,5 +1,5 @@
 'use strict';
-// 스크롤 시 navbar 투명해지게
+
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
@@ -11,7 +11,6 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// navbar menu 클릭 시 해당 위치로 스크롤링
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
@@ -23,29 +22,22 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
-// 작은 화면(모바일 화면)에서 메뉴바가 토글버튼 및 누르면 메뉴가 목록으로 나오게
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
-  console.log(navbarMenu);
 });
 
-// contact me도 누르면 contact로 스크롤링
 const homecontactBtn = document.querySelector('.home__contact');
 homecontactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
-// 위의 반복되는 동작을 함수를 만들어서 처리하기
-
-// 스크롤 시 Home 화면 투명해지게
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = (homeHeight - window.scrollY) / homeHeight;
 });
 
-// 맨 위로 올라올 수 있는 스크롤 업 버튼 추가(오른쪽 아래)
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY >= homeHeight / 2) {
@@ -59,7 +51,6 @@ arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
 });
 
-// 프로젝트 파트 선택시 해당 사항들 목차만 나오게
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
@@ -88,11 +79,6 @@ workBtnContainer.addEventListener('click', (e) => {
   }, 300);
 });
 
-// 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다.
-// 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
-// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화시킨다.
-
-// 해당 섹션 보일 때 navbar 메뉴 활성화
 const sectionIds = [
   '#home',
   '#about',
@@ -133,7 +119,6 @@ const observerCallback = (entries, observer) => {
     if (!entry.isIntersecting && entry.intersectionRatio > 0) {
       const index = sectionIds.indexOf(`#${entry.target.id}`);
 
-      // 스크롤링이 아래로 되어서 페이지가 올라옴
       if (entry.boundingClientRect.y < 0) {
         selectedNavIndex = index + 1;
       } else {

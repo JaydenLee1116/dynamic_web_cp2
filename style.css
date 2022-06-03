@@ -20,6 +20,7 @@
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
+  --font-less-medium: 24px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -107,7 +108,6 @@ p {
   transition: all var(--animation-duration) ease-in-out;
 }
 
-/* 그냥 .navbar--dark는 안되는 이유는 id가 class보다 더 상세한 지정값이기 때문이다. */
 .navbar--dark#navbar {
   background-color: var(--color-skyblue);
   padding: 4px;
@@ -143,8 +143,8 @@ p {
 }
 
 .fab {
-  width: var(--font-medium);
-  height: var(--font-medium);
+  width: var(--font-less-medium);
+  height: var(--font-less-medium);
 }
 
 .navbar__toggle-btn {
