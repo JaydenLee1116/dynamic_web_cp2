@@ -1,8 +1,14 @@
-# dynamic_web_cp2
+# 개인 포트폴리오 동적 웹 구현 프로젝트
 
 ## 배경 및 목적 : HTML, CSS, Javascript에 대한 학습 및 동적으로 만들어진 개인 포트폴리오 웹사이트 구현
 
-## 프로젝트 설명(Only 동적 구현 파트)
+## 프로젝트 설명
+
+링크 : [Jayden's Portfolio](https://jaydenlee1116.github.io/dynamic_web_cp2/)
+
+<img width="1423" alt="Screen Shot 2022-06-22 at 10 17 40" src="https://user-images.githubusercontent.com/86241737/174922869-0e500acb-d657-4f1e-9e7b-010acbf83968.png">
+
+## 코드 설명
 
 - ### 페이지 상단 메뉴바 Top에선 투명 -> 스크롤 시 배경색 추가
    - 메뉴바의 높이보다 스크롤 길이가 커지면, .navbar--dark 추가
@@ -201,3 +207,12 @@ window.addEventListener('wheel', () => {
   selectNavItem(navItems[selectedNavIndex]);
 });
 ```
+
+## 느낀점 및 추후 보완사항
+
+### 느낀점
+그동안 html 및 css를 이용해서 정적인 웹을 혼자 구현해보기만 했었다. 또, javascript의 개념과 문법에 대한 학습을 진행하면서 '그래서 js로 어떻게 웹을 동적으로 할 수 있다는거지?'라는 생각을 했다.
+이번 프로젝트를 통해 js로 어떻게 html 요소를 가져오고, DOM 조작을 할 수 있는지 등을 학습할 수 있었다.
+
+### 추후 보완사항
+웹의 기능적인 면에서는 많은 걸 구현했지만, 실제 포트폴리오 안에 있는 내용에 있어서는 아직 더 채워야할 것들이 많다. 더 많은 프로젝트를 통해 학습하고 꾸준히 포트폴리오를 업데이트하자! :)
